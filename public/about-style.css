@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e293b, #1e40af, #4338ca);
+    min-height: 100vh;
+    color: white;
+    line-height: 1.6;
+}
+
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.about-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    background: linear-gradient(45deg, #06b6d4, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.category {
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.category h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.item {
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #06b6d4;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.item p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+.item strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: #06b6d4;
+    font-family: 'Courier New', monospace;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section h1 {
+        font-size: 2rem;
+    }
+    
+    .category h2 {
+        font-size: 1.8rem;
+    }
+    
+    .item h3 {
+        font-size: 1.3rem;
+    }
+    
+    .about-img {
+        max-width: 100%;
+        height: 150px;
+    }
+    
+    .category {
+        padding: 20px;
+    }
+    
+    .item {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 20px 15px;
+    }
+    
+    .about-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .category h2 {
+        font-size: 1.5rem;
+    }
+    
+    .item h3 {
+        font-size: 1.2rem;
+    }
+}

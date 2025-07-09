@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Smart Home Automation</title>
+  <link rel="stylesheet" href="about-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="about-section">
+    <h1>ℹ️ About the Project</h1>
+    
+    <!-- Hardware Section -->
+    <div class="category">
+      <h2>🔧 Hardware Components</h2>
+
+      <div class="item">
+        <h3>📦 Microcontroller</h3>
+        <img src="/lovable-uploads/7a40e4bd-48b1-45b4-bf88-50db682a4270.png" alt="ESP8266 NodeMCU" class="about-img">
+        <p><strong>ESP8266 NodeMCU</strong><br>
+        A low-cost Wi-Fi-enabled microcontroller used for IoT applications. It connects to the Blynk cloud and controls devices.</p>
+      </div>
+
+      <div class="item">
+        <h3>🧠 Sensors</h3>
+        <img src="/lovable-uploads/0db8e816-fef2-4dc3-a1c2-d92dda5da66e.png" alt="DS18B20 Temperature Sensor" class="about-img">
+        <p><strong>DS18B20 Temperature Sensor</strong><br>
+        A digital sensor used to measure ambient temperature. It supports multiple sensors on a single wire.</p>
+
+        <img src="/lovable-uploads/577576d1-d720-434e-8a81-99b1bc8ddb80.png" alt="MQ2 Gas Sensor" class="about-img">
+        <p><strong>MQ2 Gas Sensor</strong><br>
+        Used to detect flammable gases like LPG, smoke, and methane in the environment.</p>
+      </div>
+
+      <div class="item">
+        <h3>⚡ Actuators</h3>
+        <img src="/lovable-uploads/a8a21dd4-ddd7-437a-b0ba-f5378df0ed6b.png" alt="Relay Module" class="about-img">
+        <p><strong>Relay Module (3-Channel)</strong><br>
+        Electrically operated switches to control AC appliances (like geyser, light, gas valve) from the ESP8266.</p>
+
+        <img src="/lovable-uploads/3e8d88b8-77d5-416d-96b3-1d3b49dc186b.png" alt="Servo Motor" class="about-img">
+        <p><strong>Servo Motor (SG90 or MG90S)</strong><br>
+        Used to open/close the gas valve automatically based on gas levels.</p>
+      </div>
+
+      <div class="item">
+        <h3>🧰 Other Components</h3>
+        <img src="/lovable-uploads/ab40fecb-8070-4f0f-87ce-67dddbf97757.png" alt="Push Button" class="about-img">
+        <p><strong>Push Buttons (2x)</strong><br>
+        For manual toggling of light and geyser locally.</p>
+
+        <p><strong>AC Bulb or Fan (Load)</strong><br>
+        Connected to the relay to simulate real appliances.</p>
+
+        <p><strong>Wires, Breadboard, Power Supply</strong><br>
+        For prototyping and wiring the circuit.</p>
+      </div>
+    </div>
+
+    <!-- Software Section -->
+    <div class="category">
+      <h2>💻 Software Tools</h2>
+
+      <div class="item">
+        <h3>📱 Blynk IoT App</h3>
+        <p>
+          Blynk is a powerful platform that allows you to create custom IoT dashboards. Using the Blynk mobile app, you can control devices like geysers, lights, and fans wirelessly from anywhere. It connects to the ESP8266 using the Blynk authentication token.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>🧠 Arduino IDE</h3>
+        <p>
+          Used for writing, compiling, and uploading the ESP8266 firmware. Libraries like <code>DallasTemperature</code>, <code>Servo</code>, and <code>BlynkSimpleEsp8266</code> are used for sensor and cloud integration.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

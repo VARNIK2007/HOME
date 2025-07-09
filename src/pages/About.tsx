@@ -23,8 +23,12 @@ const About = () => {
                 <h3 className="text-2xl font-semibold text-cyan-400 mb-6">📦 Microcontroller</h3>
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   <div>
-                    <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-2xl p-6 h-48 flex items-center justify-center border border-cyan-500/20">
-                      <span className="text-4xl">🔌</span>
+                    <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-2xl p-6 border border-cyan-500/20">
+                      <img 
+                        src="/lovable-uploads/7a40e4bd-48b1-45b4-bf88-50db682a4270.png" 
+                        alt="ESP8266 NodeMCU" 
+                        className="w-full h-48 object-contain"
+                      />
                     </div>
                   </div>
                   <div>
@@ -42,8 +46,12 @@ const About = () => {
                 <div className="space-y-8">
                   <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                      <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-6 h-48 flex items-center justify-center border border-green-500/20">
-                        <span className="text-4xl">🌡️</span>
+                      <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-6 border border-green-500/20">
+                        <img 
+                          src="/lovable-uploads/0db8e816-fef2-4dc3-a1c2-d92dda5da66e.png" 
+                          alt="DS18B20 Temperature Sensor" 
+                          className="w-full h-48 object-contain"
+                        />
                       </div>
                     </div>
                     <div>
@@ -56,8 +64,12 @@ const About = () => {
                   
                   <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                      <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-2xl p-6 h-48 flex items-center justify-center border border-red-500/20">
-                        <span className="text-4xl">💨</span>
+                      <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-2xl p-6 border border-red-500/20">
+                        <img 
+                          src="/lovable-uploads/577576d1-d720-434e-8a81-99b1bc8ddb80.png" 
+                          alt="MQ2 Gas Sensor" 
+                          className="w-full h-48 object-contain"
+                        />
                       </div>
                     </div>
                     <div>
@@ -76,8 +88,12 @@ const About = () => {
                 <div className="space-y-8">
                   <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                      <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-2xl p-6 h-48 flex items-center justify-center border border-purple-500/20">
-                        <span className="text-4xl">🔌</span>
+                      <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-2xl p-6 border border-purple-500/20">
+                        <img 
+                          src="/lovable-uploads/a8a21dd4-ddd7-437a-b0ba-f5378df0ed6b.png" 
+                          alt="Relay Module" 
+                          className="w-full h-48 object-contain"
+                        />
                       </div>
                     </div>
                     <div>
@@ -90,8 +106,12 @@ const About = () => {
                   
                   <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                      <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 rounded-2xl p-6 h-48 flex items-center justify-center border border-blue-500/20">
-                        <span className="text-4xl">🎯</span>
+                      <div className="bg-gradient-to-br from-blue-500/10 to-indigo-500/10 rounded-2xl p-6 border border-blue-500/20">
+                        <img 
+                          src="/lovable-uploads/3e8d88b8-77d5-416d-96b3-1d3b49dc186b.png" 
+                          alt="Servo Motor" 
+                          className="w-full h-48 object-contain"
+                        />
                       </div>
                     </div>
                     <div>
@@ -111,7 +131,11 @@ const About = () => {
                   <div>
                     <div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 rounded-2xl p-6 mb-4 border border-yellow-500/20">
                       <div className="text-center">
-                        <span className="text-3xl">🔘</span>
+                        <img 
+                          src="/lovable-uploads/ab40fecb-8070-4f0f-87ce-67dddbf97757.png" 
+                          alt="Push Button" 
+                          className="w-20 h-20 object-contain mx-auto mb-4"
+                        />
                         <h4 className="text-lg font-semibold text-white mt-2 mb-2">Push Buttons (2x)</h4>
                         <p className="text-gray-300 text-sm">For manual toggling of light and geyser locally.</p>
                       </div>
