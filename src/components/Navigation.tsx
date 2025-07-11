@@ -40,15 +40,29 @@ export const Navigation = () => {
               </Button>
             </Link>
             
-            <Button variant="ghost" className="text-white hover:bg-white/10 flex items-center space-x-2">
-              <Users className="w-4 h-4" />
-              <span>Team</span>
-            </Button>
+            <Link to="/team">
+              <Button 
+                variant="ghost" 
+                className={`text-white hover:bg-white/10 flex items-center space-x-2 ${
+                  location.pathname === '/team' ? 'bg-white/10' : ''
+                }`}
+              >
+                <Users className="w-4 h-4" />
+                <span>Team</span>
+              </Button>
+            </Link>
             
-            <Button variant="ghost" className="text-white hover:bg-white/10 flex items-center space-x-2">
-              <Monitor className="w-4 h-4" />
-              <span>Demo</span>
-            </Button>
+            <Link to="/demo">
+              <Button 
+                variant="ghost" 
+                className={`text-white hover:bg-white/10 flex items-center space-x-2 ${
+                  location.pathname === '/demo' ? 'bg-white/10' : ''
+                }`}
+              >
+                <Monitor className="w-4 h-4" />
+                <span>Demo</span>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
