@@ -1,6 +1,6 @@
 
 import { Navigation } from "@/components/Navigation";
-import { Play, Thermometer, Wind, Smartphone, Cog } from "lucide-react";
+import { ExternalLink, Thermometer, Wind, Smartphone, Cog } from "lucide-react";
 
 const Demo = () => {
   return (
@@ -20,9 +20,16 @@ const Demo = () => {
             <div className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 shadow-2xl">
               <div className="aspect-video bg-black/50 rounded-2xl flex items-center justify-center border border-white/20">
                 <div className="text-center">
-                  <Play className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
-                  <p className="text-white text-lg">Demo Video Placeholder</p>
-                  <p className="text-gray-400 text-sm mt-2">Upload your demo video here</p>
+                  <ExternalLink className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
+                  <h2 className="text-white text-2xl font-bold mb-4">Click Here to Watch Demo Video</h2>
+                  <a 
+                    href="https://1drv.ms/v/c/ba99693dd075d1d0/EVkbB7QGu_5CkSzEeg2nYEIBAI6pUQQPMgk0A1VBs0IkHw" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    Watch Demo <ExternalLink className="w-5 h-5" />
+                  </a>
                 </div>
               </div>
             </div>
