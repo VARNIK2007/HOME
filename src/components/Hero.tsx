@@ -1,8 +1,12 @@
 
 import { Button } from "@/components/ui/button";
-import { Home, Smartphone, Wifi } from "lucide-react";
+import { Home, Smartphone, Wifi, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export const Hero = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated background elements */}
@@ -36,12 +40,48 @@ export const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            Explore Demo
-          </Button>
-          <Button variant="outline" size="lg" className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-xl backdrop-blur-sm transition-all duration-300">
-            Learn More
-          </Button>
+          <Link to="/demo">
+            <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              Explore Demo
+            </Button>
+          </Link>
+          
+          <div className="relative">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-xl backdrop-blur-sm transition-all duration-300 flex items-center gap-2"
+              onClick={() => setShowDropdown(!showDropdown)}
+            >
+              Learn More
+              <ChevronDown className="w-4 h-4" />
+            </Button>
+            
+            {showDropdown && (
+              <div className="absolute top-full mt-2 bg-black/80 backdrop-blur-sm rounded-xl border border-white/10 shadow-2xl min-w-[200px]">
+                <Link to="/" onClick={() => setShowDropdown(false)}>
+                  <div className="px-4 py-3 text-white hover:bg-white/10 transition-colors first:rounded-t-xl">
+                    Home
+                  </div>
+                </Link>
+                <Link to="/about" onClick={() => setShowDropdown(false)}>
+                  <div className="px-4 py-3 text-white hover:bg-white/10 transition-colors">
+                    About
+                  </div>
+                </Link>
+                <Link to="/team" onClick={() => setShowDropdown(false)}>
+                  <div className="px-4 py-3 text-white hover:bg-white/10 transition-colors">
+                    Team
+                  </div>
+                </Link>
+                <Link to="/demo" onClick={() => setShowDropdown(false)}>
+                  <div className="px-4 py-3 text-white hover:bg-white/10 transition-colors last:rounded-b-xl">
+                    Demo
+                  </div>
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>
